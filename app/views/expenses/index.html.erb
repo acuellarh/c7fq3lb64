@@ -19,6 +19,7 @@
             <th>Concepto</th>
             <th class="text-right">Categoría</th>
             <th class="text-right">Monto</th>
+            <th class="text-right">User_id</th>
           </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
               <td class="concept"><%= expense.concept %></td>
               <td class="category text-right"><%= expense.category.name %></td>
               <td class="text-right amount" style="width: 170px;"><%= number_to_currency(expense.amount, precision: 0) %></td>
+              <td class="usuario text-right"><%= expense.user_id %></td>
             </tr>
           <% end %>
         </tbody>

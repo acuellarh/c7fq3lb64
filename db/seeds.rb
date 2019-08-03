@@ -7,11 +7,26 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-restaurantes = Category.create(name: "Restaurantes")
-carro = Category.create(name: "Carro")
-hogar = Category.create(name: "Hogar")
+# restaurantes = Category.create(name: "Restaurantes")
+# carro = Category.create(name: "Carro")
+# hogar = Category.create(name: "Hogar")
 
-Expense.create(category: restaurantes, date: Date.current, concept: "Hamburguesas el burral", amount: 32000)
-Expense.create(category: restaurantes, date: Date.current - 4, concept: "Hamburguesas el burral", amount: 45000)
-Expense.create(category: carro, date: Date.current, concept: "Gasolina", amount: 80000)
-Expense.create(category: hogar, date: Date.current - 6, concept: "Lámparas", amount: 350000)
+# Expense.create(category: restaurantes, date: Date.current, concept: "Hamburguesas el burral", amount: 32000)
+# Expense.create(category: restaurantes, date: Date.current - 4, concept: "Hamburguesas el burral", amount: 45000)
+# Expense.create(category: carro, date: Date.current, concept: "Gasolina", amount: 80000)
+# Expense.create(category: hogar, date: Date.current - 6, concept: "Lámparas", amount: 350000)
+
+# alejo = User.create(email: "prueba@gmail.com")
+# ocio = Category.create(name: "Ocio")
+
+# Expense.create(category: ocio, date: Date.current - 6, concept: "Rumba", amount: 160000)
+
+# prueba2 = User.create(email: "prueba2@gmail.com")
+# ocio = Category.create(name: "Ocio")
+
+# Expense.create(category: ocio, date: Date.current - 6, concept: "Rumba", amount: 1000, user:prueba2)
+
+prueba2 = User.create(email: "prueba2@gmail.com")
+ocio = Category.create(name: "Ocio")
+
+Expense.create(category: ocio, date: Date.current - 6, concept: "Rumba", amount: 1000, user:prueba2)
